@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Casero</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="/assets/styles.css"/><link rel="icon" href="https://www.cinecasero.uy//favicon.svg"/>
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class="cursor">ENTRAR</div>
+        <span class="title">Cine Casero</span>
+    </div>
+    <audio id="music" src="https://www.cinecasero.uy/sounds/music.mp3" playsinline="" loop=""></audio>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="" class="link-mainpage">
+                    <span class="blind">Cine Casero</span>
+                    <svg width="68" height="35" viewBox="0 0 68 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.866 0L0 23.85V35h67.463V0H21.866zM62.04 13.28c-.91 1.928-2.33 3.21-4.607 3.21-3.215 0-5.385-2.288-5.385-5.608 0-3.487 2.385-6 5.76-6 2.277 0 4.017 1.2 4.017 2.79 0 2.121-3.108 2.037-3.108.28 0-.49.263-.793.46-1.02.116-.135.21-.243.21-.347 0-.362-.67-.697-1.447-.697-1.902 0-3.402 1.896-3.402 4.745 0 2.734 1.42 4.437 3.483 4.437 1.178 0 2.223-.614 3.027-2.149.163-.338 1.18-.03.992.36zm-4.607 17.26c2.278 0 3.698-1.283 4.607-3.21.188-.39-.829-.697-.992-.36-.804 1.535-1.85 2.149-3.027 2.149-2.063 0-3.483-1.703-3.483-4.437 0-2.848 1.5-4.745 3.402-4.745.777 0 1.447.336 1.447.697 0 .104-.094.212-.21.348-.197.226-.46.53-.46 1.02 0 1.756 3.108 1.84 3.108-.28 0-1.591-1.74-2.79-4.017-2.79-3.375 0-5.76 2.512-5.76 6 0 3.32 2.17 5.608 5.385 5.608z" fill="currentColor"></path></svg>
+                </a>
+            </h1>
+
+            <nav class="group-nav">
+                <a href="" class="btn-contact" role="button">Contacto</a>
+                <a href="" class="btn-colabo" role="button">Colaborar</a>
+                <a href="" class="btn-audio on" role="button">
+                    <span class="blind">음악재생</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" data-sound="on"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                </a>
+
+                <a href="" class="btn-audio off" role="button">
+                    <span class="blind">음악정지</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" data-sound="off"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                </a>
+                
+                <a href="" class="btn-open" role="button">
+                    <span class="blind">메뉴 이동 탭</span>
+                    <span class="path-top"></span>
+                    <span class="path-bottom"></span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="inner-menu">
+            <figure class="bg"></figure>
+            <div class="inner-wrap">
+                <div class="sns-area">
+                    <ul class="sns-list">
+                        <li class="sns-item"><a href="" class="link-email">Email</a></li>
+                        <li class="sns-item"><a href="" class="link-facebook">Facebook</a></li>
+                        <li class="sns-item"><a href="" class="link-instagram">Instagram</a></li>
+                        <li class="sns-item"><a href="" class="link-vimeo">Vimeo</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-area">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <span>01</span>
+                            <em>Realizaciones</em>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="" class="btn-homemovie" role="button">Home Movie Day</a></li>
+                                <li class="sub-item"><a href="" class="btn-text" role="button">Film Performances</a></li>
+                                <li class="sub-item"><a href="" class="btn-gran_film" role="button">El Gran Film del Uruguay</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <span>02</span>
+                            <em>Colectivo</em>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="" class="btn-aboutus" role="button">Sobre Nosotros</a></li>
+                                <li class="sub-item"><a href="" class="btn-focus" role="button">Nuestro Foco</a></li>
+                                <li class="sub-item"><a href="" class="btn-service" role="button">Nuestros Servicios</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <span>03</span>
+                            <em>Conectar</em>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="" class="btn-inner_colabo" role="button">Colabora</a></li>
+                                <li class="sub-item"><a href="" class="btn-inner_contact" role="button">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="sc-memory">
+            <span class="blind">갤러리</span>
+
+            <div class="text-area">
+                <h2 class="title">Experiencias que reconectan con el pasado, <br /> la comunidad, la memoria y la identidad.</h2>
+                <p class="sub-title">Somos <span class="bold">Cine Casero</span>, un colectivo abocado a la <br />preservación de registros audiovisuales familiares.</p>
+            </div>
+
+            <div class="group-gallery">
+            <div class="gallery-area">
+                <div class="left outer">
+                    <img src="./asset/images/memory/memory1.jpg" alt="">
+                </div>
+                <div class="left inner">
+                    <img src="./asset/images/memory/memory2.jpg" alt="">
+                    <img src="./asset/images/memory/memory3.jpg" alt="">
+                </div>
+                <div class="center">
+                    <img src="./asset/images/memory/memory-center.jpg" alt="">
+                    <strong class="gallery-title">Todos tenemos un tesoro mfamiliar para compartir</strong>
+                </div>
+                <div class="right inner">
+                    <img src="./asset/images/memory/memory4.jpg" alt="">
+                    <img src="./asset/images/memory/memory5.jpg" alt="">
+                </div>
+                <div class="right outer">
+                    <img src="./asset/images/memory/memory6.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="sc-testimonials" data-white="1">
+            <div class="inner">
+                <h2 class="title">Historias reales que <br /> transmiten nuestra esencia</h2>
+
+                <ul class="testimonials-list">
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img1.jpg" alt=""></div>
+                            <p class="quote">...“este registro me permite encontrarme de una forma diferente directamente con él”...</p>
+                        </a>
+                    </li>
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img2.jpg" alt=""></div>
+                            <p class="quote">...“me parece sentir la textura del pantalón de paño de mi madre”...</p>
+                        </a>
+                    </li>
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img3.jpg" alt=""></div>
+                            <p class="quote">...“creo que las películas son ese movimiento latente, que está ahí siempre”...</p>
+                        </a>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img4.jpg" alt=""></div>
+                            <p class="quote">...“cine casero es necesario por lo que representa”...</p>
+                        </a>
+                    </li>
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img5.jpg" alt=""></div>
+                            <p class="quote">...“mi padre después de que se hizo esta película me llevó a verla”...</p>
+                        </a>
+                    </li>
+                    <li class="testimonials-item">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/testimonials/img6.jpg" alt=""></div>
+                            <p class="quote">...“es muy lindo ver como cuidan y disfrutan las películas familiares”...</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sc-homemovie" data-white="1">
+            <div class="inner">
+                <div class="text-area">
+                    <h2 class="homemovie_title">Home<br> Movie Day</h2>
+                    <p class="desc">
+                        El <span class="bold">Día de las Películas Familiares</span> es un evento abierto y gratuito que se celebra a nivel internacional y que es organizado por voluntarios que buscan llamar la atención sobre la importancia de preservar los registros amateurs, cotidianos y domésticos por el valor que tienen para la memoria colectiva y el patrimonio cultural de un país.
+                    </p>
+                    <a href="" class="link-info">
+                        <p>TIPS PARA CONSERVAR TU ARCHIVO FAMILIAR</p>
+                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8647 10.3128L15.5211 5.65649L10.8647 1.00018" stroke="#EAE9E4" stroke-width="1.4"></path><path d="M-4.29153e-06 5.65649L15.5211 5.65649" stroke="#EAE9E4" stroke-width="1.4"></path></svg>
+                    </a>
+                    <a href="" class="link-info">
+                        <p>DISEÑO DE CONTENEDOR PARA TUS PELÍCULAS</p>
+                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8647 10.3128L15.5211 5.65649L10.8647 1.00018" stroke="#EAE9E4" stroke-width="1.4"></path><path d="M-4.29153e-06 5.65649L15.5211 5.65649" stroke="#EAE9E4" stroke-width="1.4"></path></svg>
+                    </a>
+
+                    <div class="partner">
+                        <span>EVENTO IMPULSADO POR</span>
+                        <img src="./asset/images/homemovie/company.png" alt="">
+                    </div>
+                </div>
+
+                <div class="reel-area">
+                    <figure class="bg"></figure>
+                    <div class="reel left">
+                        <ul class="reel-list">
+                            <li class="reel-item"><img src="./asset/images/homemovie/left1.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/left2.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/left3.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/left4.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/left5.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="reel right">
+                        <ul class="reel-list">
+                            <li class="reel-item"><img src="./asset/images/homemovie/right1.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/right2.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/right3.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/right4.jpg" alt=""></li>
+                            <li class="reel-item"><img src="./asset/images/homemovie/right5.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-text" data-white="1">
+            <p class="txt txt1">
+                <span>Film Performances · Film Performances ·</span> 
+                <span>Film Performances · Film Performances ·</span> 
+            </p>
+            <p class="txt txt2">
+                <span>Film Performances · Film Performances ·</span> 
+                <span>Film Performances · Film Performances ·</span> 
+            </p>   
+        </section>
+
+        <section class="sc-cinema" data-white="1">
+            <div class="text-area">
+                <strong class="title">Creaciones audiovisuales a partir de<br /> foundfootage en 16mm y Super 8mm.</strong>
+                <p class="desc">Diseñamos proyecciones multipantalla, en<br /> soporte fílmico, que son sonorizadas y<br /> musicalizadas en vivo.</p>
+                <p class="desc">Ponemos en relación viejas películas<br /> publicitarias, de ficción, familiares,<br /> institucionales, animadas, que son reutilizadas<br /> en un nuevo contexto narrativo y semiótico para<br /> generar nuevas experiencias e historias.</p>
+            </div>
+        </section>
+
+        <section class="sc-gran_film" data-white="1">
+            <div class="inner">
+                <div class="img-area">
+                    <img class="rotate" src="./asset/images/film/film.png" alt="">
+                </div>
+                <div class="text-area">
+                    <div class="text-wrap">
+                        <h2 class="gran_title">El Gran Film de Uruguay</h2>
+                        <strong class="subtitle">Proyecto de inspección y puesta en valor de la Colección de nitratos del Fondo Carlos Alonso.</strong>
+                        <p class="desc">Custodiada por el Archivo Nacional de la Imagen y la Palabra - SODRE, se compone de aproximadamente 40 latas de película. Rodadas en varias ciudades y paisajes de todo el país en la década de 1930, en forma de registro documental. La colección no ha podido ser estudiada en profundidad hasta el momento, por lo que el colectivo se propone llevar a cabo una inspección técnica y registro fotográfico exhaustivos para aportar al diagnóstico del estado de conservación de la colección y a su preservación.</p>
+                        <p class="desc">El Gran Film del Uruguay cuenta con el apoyo del Programa de Archivos Modernos en<br /> Peligro de la Biblioteca de UCLA con fondos de Arcadia, un fondo benéfico de Lisbet Rausing<br /> y Peter Baldwin y el apoyo de instituciones referentes del país.</p>
+                    </div>
+
+                    <div class="logos-wrap">
+                        <img class="ucla" src="./asset/images/film/logo1.png" alt="UCLA Library">
+                        <img class="arcadia" src="./asset/images/film/logo2.png" alt="ARCADIA">
+                        <img class="sodre" src="./asset/images/film/logo3.png" alt="ARCHIVO NACIONAL DE LA IMAGEN Y LA PALABRA SODRE">
+                        <img class="ucu" src="./asset/images/film/logo4.png" alt="UCU">
+                        <img clas="cinemateca" src="./asset/images/film/logo5.png" alt="Cinemateca">        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-wrap">
+            <figure class="bg-left"></figure>
+            <figure class="bg-right"></figure>
+
+            <section class="sc-about">
+                <div class="inner">
+                    <div class="group-text">
+                        <p>Somos un colectivo unido, comprometido y abierto a la comunidad. Nos representan el trabajo en equipo, los procesos creativos y lo de investigacion.</p>
+                    </div>
+                    <div class="group-img">
+                        <div class="slide left">
+                            <img class="img1" data-img src="./asset/images/about/img1.jpg" alt="">
+                            <img class="img2" data-img src="./asset/images/about/img2.jpg" alt="">
+                            <img class="img3" data-img src="./asset/images/about/img3.jpg" alt="">
+                        </div>
+                        <div class="slide right">
+                            <img class="img4" data-img src="./asset/images/about/img4.jpg" alt="">
+                            <img class="img5" data-img src="./asset/images/about/img5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-aboutus">
+                <div class="inner">
+                    <div class="text-area">
+                        <h2 class="aboutus_title">Sobre <br/> Nosotros</h2>
+                        <p class="desc"><span class="bold">Cine Casero</span> es un colectivo abocado a la preservación de la memoria colectiva que nace en 2014 con el objetivo de celebrar por primera vez en Uruguay “El día de las películas familiares” (Home Movie Day).</p>
+                        <p class="desc">Nos interesa <span class="bold">involucrar, entusiasmar y formar a las propias comunidades </span>para que puedan atender la problemática de la preservación audiovisual de su memoria colectiva.</p>
+                    </div>
+
+                    <div class="team-area">
+                        <p class="title">CINE CASERO SOMOS</p>
+                        <ul class="team-list">
+                            <li class="team-item" data-fade="2">
+                                <strong>Julieta Keldjian</strong>
+                                <p class="desc"> Se dedica a la docencia universitaria y a la investigación en estudios del cine y medios.</p>
+                            </li>
+                            <li class="team-item" data-fade="2">
+                                <strong>Macarena Fernández Puig</strong>
+                                <p class="desc"> Se dedica a la gestión de colecciones audiovisuales y es documentalista.</p>
+                            </li> 
+                            <li class="team-item" data-fade="2">
+                                <strong>Carolina Curti</strong>
+                                <p class="desc"> Es licenciada en comunicación social con formación en audiovisual y fotografía y docente.</p>
+                            </li> 
+                            <li class="team-item" data-fade="2">
+                                <strong>Felipe Bellocq</strong>
+                                <p class="desc"> Es licenciado en ingeniería audiovisual y se desarrolla como realizador e investigador.</p>
+                            </li> 
+                            <li class="team-item" data-fade="2">
+                                <strong>Nico Soto</strong>
+                                <p class="desc"> Se formó en dirección de fotografía y trabaja como realizador audiovisual y músico.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-focus">
+                <div class="video-area">
+                    <video src="https://www.cinecasero.uy/videos/nosotros.webm" autoplay muted loop></video>
+                    <strong class="title">Nuestro foco</strong>
+                </div>
+
+                <div class="inner">
+                    <div class="text-area left">
+                        <p class="desc">El colectivo trabaja principalmente en la preservación y el acceso audiovisual. Se plantea como objetivo difundir buenas prácticas de conservación en la comunidad, para que los archivos personales y familiares sobrevivan para las futuras generaciones.</p>
+                    </div>
+                    <div class="text-area right">
+                        <p class="desc">Por eso investiga, rescata y recupera el valor de los registros audiovisuales de la vida cotidiana; películas domésticas y cine amateur que forman parte de nuestro patrimonio cultural. Se trata de materiales que muchas veces no han sido atendidos por las instituciones archivísticas, porque no se ajustan a las convenciones de lo que se considera patrimonio audiovisual o porque no cuentan con el conocimiento y la infraestructura adecuada para cuidarlos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-service">
+                <div class="inner">
+                    <div class="title-area">
+                        <h2 class="service-title">Nuestros<br /> servicios</h2>
+                        <p class="subtitle">Somos profesionales que venimos del campo de comunicación, la ingeniería audiovisual y la conservación de archivos audiovisuales y fotográficos.</p>
+                    </div>
+
+                    <div class="text-area">
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.7143 20.6176H10.5029L10.3556 20.7693L5.5 25.7677V21.1176V7.5H28.5V20.6176H10.7143Z" stroke="currentColor"></path><path d="M13 23V28.7059H29L34 34V28.7059V16H31" stroke="currentColor"></path></svg>
+                            </div>
+                            <strong class="title">Advice</strong>
+                            <p class="desc">Almacenamiento, preservación y gestión de colecciones audiovisuales en soporte fotoquímico, magnético y digital.</p>
+                        </div>
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.1667 14.5V5.5H34.5V14.5H22.1667ZM5.5 21.1667V5.5H17.8333V21.1667H5.5ZM22.1667 34.5V18.8333H34.5V34.5H22.1667ZM5.5 34.5V25.5H17.8333V34.5H5.5Z" stroke="currentColor"></path></svg>
+                            </div>
+                            <strong class="title">Collection Identification</strong>
+                            <p class="desc">Realizamos evaluaciones de identificación, catalogación y diagnóstico para preservación de colecciones audiovisuales. Buscamos mejorar las condiciones de preservación de los soportes para palear su degradación y brindamos asesoramiento sobre las posibles vías de digitalización del material.</p>
+                        </div>
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 19H35V35H5V19ZM6 34H34V20H6V34Z" fill="#1C1C1C"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 12.5H31.5V17H30.5V13.5H9.5V17H8.5V12.5Z" fill="#1C1C1C"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 6.5H28.5V10H27.5V7.5H12.5V10H11.5V6.5Z" fill="#1C1C1C"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18 31L25 27L18 23V31ZM19 29.2768L22.9844 27L19 24.7232V29.2768Z" fill="#1C1C1C"></path></svg>
+                            </div>
+                            <strong class="title">Digitial File Management</strong>
+                            <p class="desc">Diseño de estructuras de almacenamiento, prácticas y acordes a las necesidades y requerimientos de cada proyecto. Clasificación e identificación de material, acceso, back-ups.</p>
+                        </div>
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.3351 19.9998C13.3351 16.3157 16.3192 13.3315 20.0034 13.3315C23.6875 13.3315 26.6717 16.3157 26.6717 19.9998C26.6717 23.684 23.6875 26.6681 20.0034 26.6681C16.3192 26.6681 13.3351 23.684 13.3351 19.9998ZM20.0034 14.3315C16.8715 14.3315 14.3351 16.868 14.3351 19.9998C14.3351 23.1317 16.8715 25.6681 20.0034 25.6681C23.1352 25.6681 25.6717 23.1317 25.6717 19.9998C25.6717 16.868 23.1352 14.3315 20.0034 14.3315ZM30.3984 21.9496L30.4687 21.387C30.5279 20.9131 30.5689 20.4655 30.5689 19.9998C30.5689 19.5342 30.5279 19.0866 30.4687 18.6127L30.3984 18.0501L33.9342 15.2851L31.0474 10.2908L26.8781 11.9652L26.4255 11.6171C25.6889 11.0505 24.9021 10.5879 24.0499 10.2386L23.5205 10.0216L22.8834 5.5791H17.1233L16.4863 10.0216L15.9568 10.2386C15.1116 10.585 14.3217 11.0619 13.5715 11.6245L13.1212 11.9622L8.95932 10.2908L6.07247 15.2851L9.60834 18.0501L9.53802 18.6126C9.4789 19.0856 9.4378 19.549 9.4378 19.9998C9.4378 20.4507 9.4789 20.9141 9.53802 21.387L9.60834 21.9496L6.07247 24.7146L8.95932 29.7089L13.1286 28.0344L13.5812 28.3826C14.3178 28.9492 15.1046 29.4118 15.9568 29.7611L16.4863 29.9781L17.1233 34.4206H22.8834L23.5205 29.9781L24.0499 29.7611C24.8951 29.4147 25.685 28.9378 26.4352 28.3752L26.8855 28.0374L31.0474 29.7089L33.9342 24.7146L30.3984 21.9496ZM34.8998 25.0424L31.8156 30.378C31.6769 30.6247 31.4147 30.7635 31.1526 30.7635C31.06 30.7635 30.9675 30.7481 30.875 30.7173L27.0352 29.1752C26.2333 29.7766 25.3698 30.3009 24.4291 30.6864L23.8431 34.7729C23.7969 35.143 23.473 35.4206 23.0875 35.4206H16.9192C16.5337 35.4206 16.2099 35.143 16.1636 34.7729L15.5776 30.6864C14.6369 30.3009 13.7734 29.792 12.9715 29.1752L9.13173 30.7173C9.05463 30.7481 8.9621 30.7635 8.86958 30.7635C8.592 30.7635 8.32985 30.6247 8.19106 30.378L5.10691 25.0424C4.92187 24.7032 4.99897 24.2868 5.29196 24.0555L8.54574 21.5111C8.48406 21.0176 8.4378 20.5087 8.4378 19.9998C8.4378 19.491 8.48406 18.9821 8.54574 18.4886L5.29196 15.9442C4.99897 15.7129 4.90644 15.2965 5.10691 14.9573L8.19106 9.62169C8.32985 9.37495 8.592 9.23617 8.85416 9.23617C8.94668 9.23617 9.0392 9.25159 9.13173 9.28243L12.9715 10.8245C13.7734 10.2231 14.6369 9.69879 15.5776 9.31327L16.1636 5.22677C16.2099 4.85668 16.5337 4.5791 16.9192 4.5791H23.0875C23.473 4.5791 23.7969 4.85668 23.8431 5.22677L24.4291 9.31327C25.3698 9.69879 26.2333 10.2077 27.0352 10.8245L30.875 9.28243C30.9521 9.25159 31.0446 9.23617 31.1371 9.23617C31.4147 9.23617 31.6769 9.37495 31.8156 9.62169L34.8998 14.9573C35.0848 15.2965 35.0077 15.7129 34.7148 15.9442L31.461 18.4886C31.5227 18.9821 31.5689 19.4755 31.5689 19.9998C31.5689 20.5242 31.5227 21.0176 31.461 21.5111L34.7148 24.0555C35.0077 24.2868 35.0848 24.7032 34.8998 25.0424Z" fill="#1C1C1C"></path></svg>
+                            </div>
+                            <strong class="title">Workshops</strong>
+                            <p class="desc">Gestión de archivos audiovisuales personales y familiares, conocimientos de herramientas y técnicas de almacenamiento, conservación, preservación, acceso y back ups de material.</p>
+                        </div>
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.6869 22.1464L27.8333 21.2929V22.5V28.3333C27.8333 28.9739 27.3072 29.5 26.6667 29.5H6.66667C6.02614 29.5 5.5 28.9739 5.5 28.3333V11.6667C5.5 11.0261 6.02614 10.5 6.66667 10.5H26.6667C27.3072 10.5 27.8333 11.0261 27.8333 11.6667V17.5V18.7071L28.6869 17.8536L34.5 12.0404V27.9596L28.6869 22.1464Z" stroke="#1C1C1C"></path></svg>
+                            </div>
+                            <strong class="title">Film Performances</strong>
+                            <p class="desc">Diseñamos experiencias audiovisuales performáticas, analógicas y multipantalla, a partir de material encontrado (found footage) que son sonorizadas y musicalizadas en vivo. Ponemos en relación distintos materiales y soportes - 16mm, super 8mm, diapositivas- que son reutilizadas en un nuevo texto narrativo y semiótico, para generar nuevas experiencias e historias.</p>
+                        </div>
+                        <div class="inner-wrap">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.6869 22.1464L27.8333 21.2929V22.5V28.3333C27.8333 28.9739 27.3072 29.5 26.6667 29.5H6.66667C6.02614 29.5 5.5 28.9739 5.5 28.3333V11.6667C5.5 11.0261 6.02614 10.5 6.66667 10.5H26.6667C27.3072 10.5 27.8333 11.0261 27.8333 11.6667V17.5V18.7071L28.6869 17.8536L34.5 12.0404V27.9596L28.6869 22.1464Z" stroke="#1C1C1C"></path></svg>
+                            </div>
+                            <strong class="title">Search</strong>
+                            <p class="desc">Documentación de material audiovisual y fotográfico contemporáneo e histórico para: investigaciones académicas y artísticas, obras documentales, de ficción y audiovisuales en general.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-colabo">
+                <div class="inner">
+                    <h2 class="title">¿Querés colaborar<br /> con nosotros?</h2>
+                    <p class="desc">Somos un <span class="bold">colectivo autogestionado e independiente.</span> Si queres podes colaborar con nuestro<br /> trabajo a través de donaciones de películas, equipos de proyección y recursos económicos.</p>
+                    <a href="" class="link-contact">
+                        <span>CONTACTANOS</span>
+                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3437 10.3126L16 5.65625L11.3437 0.999931" stroke="currentColor"></path><path d="M6.4072e-07 5.65625L16 5.65625" stroke="currentColor"></path></svg>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" data-white="1">
+        <div class="footer-inner">
+            <div class="group-text">
+                <h3 class="more">CONOCE MÁS SOBRE CINE CASERO</h3>
+            
+                <div class="contact-area">
+                    <a href=""><span>Email</span></a>
+                    <a href=""><span>Facebook</span></a>
+                    <a href=""><span>Instagram</span></a>
+                    <a href=""><span>Vimeo</span></a>
+                </div>
+            </div>
+            <div class="group-nav">
+                <div class="inner">
+                    <div class="inner-wrap">
+                        <div class="logo">
+                            <svg class="c-footer-logo" width="68" height="35" viewBox="0 0 68 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 34.5V24.0444L22.0856 0.5H66.9634V34.5H21.8657H0.5Z" stroke="#EAE9E4"></path><path d="M62.0395 13.2808C61.13 15.2075 59.7102 16.4907 57.4327 16.4907C54.2169 16.4907 52.0469 14.2022 52.0469 10.8824C52.0469 7.39468 54.4318 4.88232 57.8068 4.88232C60.0843 4.88232 61.8246 6.08154 61.8246 7.67249C61.8246 9.7931 58.7163 9.70916 58.7163 7.95231C58.7163 7.17082 59.3859 6.86302 59.3859 6.58521C59.3859 6.22344 58.7163 5.88766 57.9392 5.88766C56.0378 5.88766 54.5373 7.78442 54.5373 10.6325C54.5373 13.3668 55.9572 15.0696 58.0198 15.0696C59.1979 15.0696 60.2436 14.456 61.0475 12.921C61.2106 12.5833 62.2275 12.8911 62.0395 13.2808Z" fill="#EAE9E4"></path><path d="M62.0395 27.3301C61.13 29.2569 59.7102 30.54 57.4327 30.54C54.2169 30.54 52.0469 28.2515 52.0469 24.9317C52.0469 21.444 54.4318 18.9316 57.8068 18.9316C60.0843 18.9316 61.8246 20.1309 61.8246 21.7218C61.8246 23.8424 58.7163 23.7585 58.7163 22.0016C58.7163 21.2201 59.3859 20.9123 59.3859 20.6345C59.3859 20.2728 58.7163 19.937 57.9392 19.937C56.0378 19.937 54.5373 21.8337 54.5373 24.6819C54.5373 27.4161 55.9572 29.119 58.0198 29.119C59.1979 29.119 60.2436 28.5054 61.0475 26.9704C61.2106 26.6326 62.2275 26.9404 62.0395 27.3301Z" fill="#EAE9E4"></path></svg>
+                        </div>
+                        <p class="copy">© Copyright  Cine Casero</p>
+                    </div>
+                    <nav class="nav-area">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="" class="title">COLECTIVO</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">Sobre Nosotros</a></li>
+                                    <li class="sub-item"><a href="">Nuestro Foco</a></li>
+                                    <li class="sub-item"><a href="">Nuestros Servicios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="title">REALIZACIONES</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">Home Movie Day</a></li>
+                                    <li class="sub-item"><a href="">Film Performances</a></li>
+                                    <li class="sub-item"><a href="">El Gran Film de Uruguay</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="title">CONECTAR</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">Colabora</a></li>
+                                    <li class="sub-item"><a href="">Contacto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-top"><span class="blind">상단으로 이동</span>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29 20.8L24 16l-5 4.8M24 32V16" stroke="currentColor"></path><path d="M24 47.75C10.883 47.75.25 37.117.25 24S10.883.25 24 .25 47.75 10.883 47.75 24 37.117 47.75 24 47.75z" stroke="currentColor" stroke-width=".5"></path></svg>
+        </button>
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/split-type@0.3.3/umd/index.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="./asset/js/main.js" defer></script>
+    
+
+</body>
+</html>
