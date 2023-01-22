@@ -208,11 +208,11 @@
                 transform: rotate(-7deg);
 
                 @include tablet{
-                    left: -80px;
+                    left: -100px;
                 }
 
                 @include mobile{
-                    margin-right: auto;
+                    margin-right: 800px;
                     transform: rotate(-3deg);
                 }
             }
@@ -222,12 +222,12 @@
                 transform: rotate(5deg);
 
                 @include tablet{
-                    left: -180px;
+                    left: -240px;
                 }
 
                 @include mobile{
                     margin-top: 10px;
-                    margin-right: 500px;
+                    margin-right: 580px;
                     transform: rotate(4deg);
                 }
             }
@@ -237,11 +237,11 @@
                 transform: rotate(-4deg);
 
                 @include tablet{
-                    left: -280px;
+                    left: -370px;
                 }
 
                 @include mobile{
-                    margin-right: 330px;
+                    margin-right: 430px;
                     transform: rotate(-4deg);
                 }
             }
@@ -251,11 +251,11 @@
                 transform: rotate(4deg);
 
                 @include tablet{
-                    left: -80px;
+                    left: -120px;
                 }
 
                 @include mobile{
-                    margin-right: 730px;
+                    margin-right: 780px;
                     transform: rotate(4deg);
                 }
             }
@@ -265,12 +265,12 @@
                 transform: rotate(-6deg);
 
                 @include tablet{
-                    left: -180px;
+                    left: -270px;
                 }
 
                 @include mobile{
                    top: 10px;
-                    margin-right: 530px;
+                    margin-right: 580px;
                     transform: rotate(-5deg);
                 }
             }
@@ -280,12 +280,12 @@
                 transform: rotate(7deg);
 
                 @include tablet{
-                    left: -280px;
+                    left: -400px;
                 }
 
                 @include mobile{
                     top: -15px;
-                     margin-right: 330px;
+                     margin-right: 430px;
                      transform: rotate(5deg);
                  }
             }
@@ -453,7 +453,7 @@
         gap: 20px;
 
         @include tablet{
-            gap: 10px;
+            gap: 0;
         }
 
         @include mobile{
@@ -484,6 +484,12 @@
                 width: 100%;
                 height: 375px;
                 border-radius: 15px;
+
+
+                @include tablet{
+                    width: 90%;
+                    // height: auto;
+                }
             }
 
             .right{
@@ -880,7 +886,7 @@
                         }
 
                         @include mobile{
-                            gap: 200px;
+                            gap: 270px;
                         }
                         .img4{
                             width: 271px;
@@ -1146,8 +1152,8 @@
                     margin-left: 140px;
 
                     @include tablet{
-                        font-size: 80px;
-                        margin-left: 90px;
+                        font-size: 70px;
+                        margin-left: 50px;
                     }
 
                     @include mobile{
@@ -1165,7 +1171,7 @@
                     @include tablet{
                         font-size: 14px;
                         width: 360px;
-                        margin-left: 90px;
+                        margin-left: 50px;
                     }
 
                     @include mobile{
@@ -1181,11 +1187,12 @@
                 margin-left: 140px;
 
                 @include tablet{
-                    margin-left: 30px;
+                    margin-left: 0;
                 }
 
                 @include mobile{
-                    margin-left: 40px;
+                    margin-left: 15px;
+                    padding: 10px;
                 }
 
                 .inner-wrap{
@@ -1200,6 +1207,7 @@
                         @include tablet{
                             font-size: 16px;
                         }
+
                     }
 
                     .desc{
@@ -1209,6 +1217,10 @@
                         @include tablet{
                             width: 360px;
                             font-size: 14px;
+                        }
+
+                        @include mobile{
+                            width: 350px;
                         }
                     }
                 }

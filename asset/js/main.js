@@ -399,7 +399,6 @@ gsap.from(granFilmTitle.chars, {
 //gran-film 이미지 회전 효과
 infi = gsap.to('.sc-gran_film .rotate',10,{
     rotation: 90,
-    repeat: -1,
     ease:'none',
 })
 
