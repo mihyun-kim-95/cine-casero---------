@@ -1,150 +1,156 @@
 .footer{
     position: relative;
     width: 100%;
-    height: 100vh;
     background: #1c1c1c;
     color: #b2aea8;
     overflow: hidden;
 
-    .group-text{
-        text-align: center;
-        margin-bottom: 60px;
+    .footer-inner{
+        padding-bottom: 50px;
 
-        .more{
-            color: #eae9e4;
-            padding-top: 75px;
-            font-size: 18px;
-            line-height: 1;
-            margin-bottom: 40px;
+        @include mobile{
+            padding-bottom: 0;
         }
+        .group-text{
+            text-align: center;
+            margin-bottom: 60px;
 
-        .contact-area{
-            display: flex;
-            flex-direction: column;
-            font-size: 65px;
-            line-height: 85px;
-            font-weight: 500;
-
-            @include tablet{
-                font-size: 50px;
-                line-height: 65px;
+            .more{
+                color: #eae9e4;
+                padding-top: 75px;
+                font-size: 18px;
+                line-height: 1;
+                margin-bottom: 40px;
             }
-            a{
-                &:hover{
-                    color: #eae9e4;
-                }
-            }
-        }
-    }
 
-    .group-nav{
-        max-width: 1280px;
-        margin: 0 auto;
-        font-family: 'font';
-
-        @include tablet{
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        .inner{
-            display: flex;
-
-            @include tablet{
-                    display: flex;
-                    flex-direction: column-reverse;
-                    gap: 50px;
-                }
-
-            .inner-wrap{
+            .contact-area{
                 display: flex;
                 flex-direction: column;
-                gap: 70px;
-                flex: 1;
+                font-size: 65px;
+                line-height: 85px;
+                font-weight: 500;
 
                 @include tablet{
-                    gap: 20px;
-                   margin-left: 80px;
+                    font-size: 50px;
+                    line-height: 65px;
                 }
-
-                @include mobile{
-                    gap: 10px;
-                   margin-left: 30px;
+                a{
+                    &:hover{
+                        color: #eae9e4;
+                    }
                 }
+            }
+        }
 
+        .group-nav{
+            max-width: 1280px;
+            margin: 0 auto;
+            font-family: 'font';
+
+            @include tablet{
+                max-width: 680px;
+                margin: 0 auto;
             }
 
-            .nav-area{
-                margin-right: auto;
-                flex: 1;
+            .inner{
+                display: flex;
 
                 @include tablet{
-                    margin: 0 auto;
-                }
-                .nav-list{
-                    display: flex;
-                    gap: 80px;
-                    font-weight: 500;
-                    line-height: 35px;
-                    font-size: 16px;
-                }
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 50px;
+                    }
 
-                .nav-item{
-                    font-weight: 300;
-                    line-height: 35px;
-                    font-size: 14px;
+                .inner-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 70px;
+                    flex: 1;
+
+                    @include tablet{
+                        gap: 20px;
+                        margin-left: 80px;
+                    }
 
                     @include mobile{
-                        width: 100px;
+                        gap: 10px;
+                        margin-left: 30px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .nav-area{
+                    margin-right: auto;
+                    flex: 1;
+
+                    @include tablet{
+                        margin: 0 auto;
+                    }
+                    .nav-list{
+                        display: flex;
+                        gap: 80px;
+                        font-weight: 500;
+                        line-height: 35px;
+                        font-size: 16px;
                     }
 
-                    .title{
-                        font-weight: 600;
-                        font-size: 18px;
-
-                        @include mobile{
-                            font-size: 14px;
-                        }
-                    }
-
-                    .sub-item{
+                    .nav-item{
+                        font-weight: 300;
+                        line-height: 35px;
                         font-size: 14px;
 
                         @include mobile{
-                            font-size: 13px;
-                            line-height: 22px;
+                            width: 100px;
+                        }
+
+                        .title{
+                            font-weight: 600;
+                            font-size: 18px;
+
+                            @include mobile{
+                                font-size: 14px;
+                            }
+                        }
+
+                        .sub-item{
+                            font-size: 14px;
+
+                            @include mobile{
+                                font-size: 13px;
+                                line-height: 22px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    .btn-top{
-        position: absolute;
-        bottom: 160px;
-        left: 50%;
-        transform: translate(-50%);
-        margin-left: 580px;
-        z-index: 20;
-
-        @include tablet{
-            bottom: 150px;
+        .btn-top{
+            position: absolute;
+            bottom: 160px;
             left: 50%;
             transform: translate(-50%);
-            margin-left: 300px;
-        }
+            margin-left: 580px;
+            z-index: 20;
 
-        @include mobile{
-            bottom: 30px;
-            left: 50%;
-            transform: translate(-50%);
-            margin-left: 180px;
-        }
+            @include tablet{
+                bottom: 150px;
+                left: 50%;
+                transform: translate(-50%);
+                margin-left: 300px;
+            }
 
-        &:hover svg{
-            transform: scale(1.2) rotate(360deg);
-            transition: 1s;
+            @include mobile{
+                bottom: 60px;
+                left: 50%;
+                transform: translate(-50%);
+                margin-left: 180px;
+            }
+
+            &:hover svg{
+                transform: scale(1.2) rotate(360deg);
+                transition: 1s;
+            }
         }
     }
 

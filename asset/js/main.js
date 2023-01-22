@@ -283,8 +283,6 @@ $('.testimonials-item').mouseleave(function(e){
 })
 
 
-
-
 //home movie day
 
 const homeMovieTitle = new SplitType('.homemovie_title')
@@ -506,7 +504,7 @@ ScrollTrigger.matchMedia({
                 start:"0% 0%",
                 end:"100% 100%",
                 scrub:1,
-                pin:'.title-area',
+                pin:'.sc-service .title-area',
             },
             yPercent:-5,
         }))
@@ -520,7 +518,7 @@ ScrollTrigger.matchMedia({
                 start:"0% 0%",
                 end:"100% 100%",
                 scrub:1,
-                pin:'.title-area',
+                pin:'.sc-service .title-area',
             },
             yPercent:-5,
         }))

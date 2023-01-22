@@ -212,7 +212,7 @@
                 }
 
                 @include mobile{
-                    margin-right: 650px;
+                    margin-right: 750px;
                     transform: rotate(-3deg);
                 }
             }
@@ -227,7 +227,7 @@
 
                 @include mobile{
                     margin-top: 10px;
-                    margin-right: 450px;
+                    margin-right: 500px;
                     transform: rotate(4deg);
                 }
             }
@@ -241,7 +241,7 @@
                 }
 
                 @include mobile{
-                    margin-right: 230px;
+                    margin-right: 330px;
                     transform: rotate(-4deg);
                 }
             }
@@ -255,7 +255,7 @@
                 }
 
                 @include mobile{
-                    margin-right: 630px;
+                    margin-right: 730px;
                     transform: rotate(4deg);
                 }
             }
@@ -270,7 +270,7 @@
 
                 @include mobile{
                    top: 10px;
-                    margin-right: 430px;
+                    margin-right: 530px;
                     transform: rotate(-5deg);
                 }
             }
@@ -285,7 +285,7 @@
 
                 @include mobile{
                     top: -15px;
-                     margin-right: 230px;
+                     margin-right: 330px;
                      transform: rotate(5deg);
                  }
             }
@@ -353,7 +353,6 @@
 }
 
 .sc-homemovie{
-    padding-top: 80px;
     background: #1c1c1c;
     height: 100vh;
     overflow: hidden;
@@ -363,6 +362,7 @@
     }
 
     .inner{
+        padding-top: 80px;
         max-width: 1283px;
         margin: 0 auto;
         display: flex;
@@ -803,7 +803,7 @@
                 }
 
                 @include mobile{
-                    gap: 30px;
+                    gap: 15px;
                 }
 
                 .slide{
@@ -827,12 +827,12 @@
 
                             @include tablet{
                                 width: 260px;
-                                height: 380px;
+                                height: 370px;
                             }
 
                             @include mobile{
-                                width: 200px;
-                                height: 320px;
+                                width: 190px;
+                                height: 300px;
                             }
                         }
 
@@ -843,12 +843,12 @@
 
                             @include tablet{
                                 width: 292px;
-                                height: 343px;
+                                height: 243px;
                             }
 
                             @include mobile{
-                                width: 232px;
-                                height: 283px;
+                                width: 222px;
+                                height: 173px;
                             }
                         }
 
@@ -858,13 +858,13 @@
                             border-radius: 15px;
 
                             @include tablet{
-                                width: 252px;
-                                height: 320px;
+                                width: 270px;
+                                height: 330px;
                             }
 
                             @include mobile{
-                                width: 210px;
-                                height: 270px;
+                                width: 200px;
+                                height: 260px;
                             }
                         }
                     }
@@ -874,19 +874,27 @@
                         display: flex;
                         flex-direction: column;
                         gap: 400px;
+
+                        @include tablet{
+                            gap: 320px;
+                        }
+
+                        @include mobile{
+                            gap: 200px;
+                        }
                         .img4{
                             width: 271px;
                             height: 307px;
                             border-radius: 15px;
 
                             @include tablet{
-                                width: 197px;
-                                height: 323px;
+                                width: 241px;
+                                height: 267px;
                             }
 
                             @include mobile{
-                                width: 167px;
-                                height: 287px;
+                                width: 211px;
+                                height: 237px;
                             }
                         }
 
@@ -896,13 +904,13 @@
                             border-radius: 15px;
 
                             @include tablet{
-                                width: 262px;
-                                height: 243px;
+                                width: 284px;
+                                height: 250px;
                             }
 
                             @include mobile{
-                                width: 224px;
-                                height: 190px;
+                                width: 214px;
+                                height: 180px;
                             }
                         }
                     }
@@ -927,7 +935,11 @@
             padding: 200px 50px;
             max-width: 1280px;
             margin: 0 auto;
-        
+
+            @include mobile{
+                padding: 100px 20px;
+            }
+    
             .text-area{
                 margin-bottom: 45px;
 
@@ -983,6 +995,11 @@
                         width: 100%;
                         display: flex;
                         margin-top: 10px;
+
+                        @include tablet{
+                            display: flex;
+                            flex-direction: column;
+                        }
 
                         @include mobile{
                             display: flex;
@@ -1110,13 +1127,9 @@
         overflow: hidden;
 
         .inner{
-            max-width: 1280px;
-            margin: 0 auto;
             display: flex;
 
             @include tablet{
-                max-width: 720px;
-                margin: 0 auto;
             }
 
             @include mobile{
@@ -1130,15 +1143,16 @@
                     font-size: 104px;
                     font-weight: 500;
                     margin-bottom: 30px;
-                    left: 50px;
+                    margin-left: 140px;
 
                     @include tablet{
-                        font-size: 60px;
+                        font-size: 80px;
+                        margin-left: 90px;
                     }
 
-                    @include tablet{
+                    @include mobile{
                         font-size: 60px;
-                        margin-left: 50px;
+                        margin-left: 25px;
                     }
                 }
 
@@ -1146,21 +1160,33 @@
                     font-size: 16px;
                     line-height: 26px;
                     width: 610px;
+                    margin-left: 140px;
 
                     @include tablet{
                         font-size: 14px;
                         width: 360px;
+                        margin-left: 90px;
                     }
 
-                    @include tablet{
-                        margin-left: 50px;
+                    @include mobile{
+                        font-size: 14px;
+                        margin-left: 25px;
                     }
+
                 }
             }
 
             .text-area{
                 width: 514px;
-                margin-left: 60px;
+                margin-left: 140px;
+
+                @include tablet{
+                    margin-left: 30px;
+                }
+
+                @include mobile{
+                    margin-left: 40px;
+                }
 
                 .inner-wrap{
                     margin: 30px 0 80px;
