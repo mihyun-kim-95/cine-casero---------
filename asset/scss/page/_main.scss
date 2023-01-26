@@ -1140,6 +1140,7 @@
             display: flex;
 
             @include tablet{
+                margin-left: 30px;
             }
 
             @include mobile{
@@ -1188,11 +1189,10 @@
 
             .text-area{
                 width: 514px;
-                margin-left: 140px;
 
-                @include tablet{
-                    margin-left: 0;
-                }
+                // @include tablet{
+                //     margin-left: 0;
+                // }
 
                 @include mobile{
                     margin-left: 15px;

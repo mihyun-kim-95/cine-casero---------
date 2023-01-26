@@ -1726,6 +1726,11 @@ body {
 .sc-service .inner {
   display: flex;
 }
+@media (max-width: 1023px) {
+  .sc-service .inner {
+    margin-left: 30px;
+  }
+}
 @media (max-width: 767px) {
   .sc-service .inner {
     display: flex;
@@ -1772,12 +1777,6 @@ body {
 }
 .sc-service .inner .text-area {
   width: 514px;
-  margin-left: 140px;
-}
-@media (max-width: 1023px) {
-  .sc-service .inner .text-area {
-    margin-left: 0;
-  }
 }
 @media (max-width: 767px) {
   .sc-service .inner .text-area {
