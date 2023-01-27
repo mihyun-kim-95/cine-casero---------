@@ -13,6 +13,10 @@ body{
         transition: 0.5s;
         //margin-right: auto가 먹힐라면 기준 width 값이 필요함
 
+        @include tablet{
+            padding: 30px 50px;
+        }
+
         .logo{
         margin-right: auto;
 
