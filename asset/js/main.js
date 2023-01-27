@@ -294,7 +294,7 @@ gsap.from(homeMovieTitle.chars, {
     scrollTrigger:{
         trigger:'.sc-homemovie',
         start:"0% 0%",
-        end: "1% 1%",
+        end: "20% 20%",
         scrub:1,
     },
 })
@@ -344,9 +344,6 @@ ScrollTrigger.matchMedia({
     },
 })
 
-//home movie day 이미지 상하 스크롤 
-
-
 
 //film performances 글씨
 infi = gsap.to('.sc-text .txt1 span',70,{
@@ -365,7 +362,7 @@ infi.play();
 infi2.play();
 
 
-//씨네마 
+//cinema
 gsap.to('.sc-cinema .text-area', {
     scrollTrigger:{
         trigger: ".sc-cinema",
@@ -391,7 +388,7 @@ gsap.from(granFilmTitle.chars, {
     scrollTrigger:{
         trigger:'.sc-gran_film',
         start:"0% 0%",
-        end: "10% 10%",
+        end: "20% 20%",
         scrub: 1,
     }
 })
@@ -407,7 +404,7 @@ gsap.to('.sc-gran_film .rotate',{
         trigger:'.sc-gran_film',
         start:"0% 0%",
         end: "100% 100%",
-        scrub: 1,
+        scrub: 3,
     },
     rotation: 100,
 })
@@ -439,7 +436,7 @@ gsap.from('.char', {
         trigger:'.sc-aboutus',
         start:"0% 0%",
         end: "10% 10%",
-        scrub: 1,
+        scrub: 2,
     }
 })
 
@@ -450,7 +447,7 @@ $('[data-fade]').each(function(i,el){
             trigger:el,
             start:"0% 80%",
             end:"100% 50%",
-            scrub:1,
+            scrub:3,
         },
         yPercent: 10,
         opacity: 0,
@@ -464,8 +461,8 @@ const tlFocus = gsap.timeline({
     scrollTrigger:{
         trigger:'.sc-focus',
         start:"0% 0%",
-        end:"100% 100%",
-        scrub: 1,
+        end:"150%",
+        scrub: 3,
         pin: '.sc-focus .video-area',
     },
 })
@@ -473,7 +470,7 @@ const tlFocus = gsap.timeline({
 tlFocus
 .to('.sc-focus video',{width: 330, height: 330, borderRadius: 500})
 .to('.sc-focus .title', {opacity: 1})
-.to('.sc-focus .inner', {yPercent: -70})
+.to('.sc-focus .inner', {yPercent: -100})
 
 
 
@@ -497,15 +494,14 @@ gsap.from(serviceTitle.chars, {
 ScrollTrigger.matchMedia({
     // large
     "(min-width: 1025px)": function() {
-        gsap.to('.sc-service .text-area', ({
-            scrollTrigger:{
-                trigger:'.sc-service',
-                start:"0% 0%",
-                end:"100% 100%",
-                scrub:1,
-                pin:'.sc-service .title-area',
-            },
-            yPercent:-5,
+        gsap.to('.sc-service .text-area',({
+            scrollTrigger: {
+                trigger: '.sc-service',
+                start: "0% 0%", 
+                end: "100% 100%",
+                scrub: 1,
+                pin: ".sc-service .title-area",
+            }
         }))
         
     },

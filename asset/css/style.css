@@ -151,7 +151,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 40px;
   margin-top: 10px;
   font-family: "font";
   font-size: 18px;
@@ -596,7 +596,7 @@ body {
   }
 }
 .loading .title {
-  font-size: 90px;
+  font-size: 75px;
   color: #eae9e4;
   text-align: center;
 }
@@ -623,6 +623,11 @@ body {
   padding-top: 170px;
   overflow: hidden;
 }
+@media (max-width: 1023px) {
+  .sc-memory {
+    padding-top: 130px;
+  }
+}
 .sc-memory .text-area {
   max-width: 1280px;
   margin: 0 auto;
@@ -636,8 +641,13 @@ body {
   align-items: center;
   font-size: 44px;
   line-height: 62px;
-  font-weight: 30;
   text-align: center;
+}
+@media (max-width: 1023px) {
+  .sc-memory .text-area .title {
+    font-size: 38px;
+    line-height: 58px;
+  }
 }
 @media (max-width: 767px) {
   .sc-memory .text-area .title {
@@ -722,14 +732,22 @@ body {
   }
 }
 .sc-memory .gallery-area .center .gallery-title {
+  width: 70%;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #eae9e4;
   font-size: 72px;
+  font-weight: 500;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 1023px) {
+  .sc-memory .gallery-area .center .gallery-title {
+    font-size: 42px;
+  }
 }
 @media (max-width: 767px) {
   .sc-memory .gallery-area .center .gallery-title {
@@ -815,6 +833,7 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(1) {
+    top: 0;
     left: -100px;
   }
 }
@@ -830,7 +849,8 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(2) {
-    left: -240px;
+    top: 0;
+    left: -270px;
   }
 }
 @media (max-width: 767px) {
@@ -846,7 +866,8 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(3) {
-    left: -370px;
+    top: 0;
+    left: -450px;
   }
 }
 @media (max-width: 767px) {
@@ -861,7 +882,8 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(4) {
-    left: -120px;
+    top: 0;
+    left: -90px;
   }
 }
 @media (max-width: 767px) {
@@ -876,6 +898,7 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(5) {
+    top: 0;
     left: -270px;
   }
 }
@@ -892,7 +915,7 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-testimonials .inner .testimonials-list .testimonials-item:nth-child(6) {
-    left: -400px;
+    left: -450px;
   }
 }
 @media (max-width: 767px) {
@@ -930,7 +953,6 @@ body {
   width: 110%;
   bottom: 30%;
   font-size: 18px;
-  line-height: 1.44;
   text-align: center;
   opacity: 0;
   visibility: hidden;
@@ -990,8 +1012,8 @@ body {
 }
 @media (max-width: 1023px) {
   .sc-homemovie .text-area .homemovie_title {
-    font-size: 95px;
-    line-height: 100px;
+    font-size: 40px;
+    line-height: 105px;
   }
 }
 .sc-homemovie .text-area .char {
@@ -1716,15 +1738,17 @@ body {
 }
 
 .sc-service {
-  padding-top: 200px;
-  width: 100%;
+  padding-top: 150px;
   height: auto;
   background: #eae9e4;
   font-family: "font";
   overflow: hidden;
 }
 .sc-service .inner {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
+  gap: 20px;
 }
 @media (max-width: 1023px) {
   .sc-service .inner {
@@ -1737,12 +1761,15 @@ body {
     flex-direction: column;
   }
 }
+.sc-service .inner .title-area {
+  width: 50%;
+}
 .sc-service .inner .title-area .service-title {
   font-family: "IvyMode";
-  font-size: 104px;
+  font-size: 7vw;
   font-weight: 500;
   margin-bottom: 30px;
-  margin-left: 140px;
+  width: 70%;
 }
 @media (max-width: 1023px) {
   .sc-service .inner .title-area .service-title {
@@ -1759,8 +1786,7 @@ body {
 .sc-service .inner .title-area .subtitle {
   font-size: 16px;
   line-height: 26px;
-  width: 610px;
-  margin-left: 140px;
+  width: 70%;
 }
 @media (max-width: 1023px) {
   .sc-service .inner .title-area .subtitle {
@@ -1776,7 +1802,7 @@ body {
   }
 }
 .sc-service .inner .text-area {
-  width: 514px;
+  width: 50%;
 }
 @media (max-width: 767px) {
   .sc-service .inner .text-area {
@@ -1801,6 +1827,7 @@ body {
 .sc-service .inner .text-area .inner-wrap .desc {
   font-size: 16px;
   line-height: 26px;
+  width: 80%;
 }
 @media (max-width: 1023px) {
   .sc-service .inner .text-area .inner-wrap .desc {
