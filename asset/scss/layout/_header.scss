@@ -25,6 +25,11 @@ body{
                 top: 45px;
                 left: 30px;
             }
+
+            svg{
+                width: 45px;
+                height: 30px;
+            }
         }
 
         .group-nav{
@@ -75,6 +80,13 @@ body{
                         display: block;
                     }
                 }    
+
+                svg{
+                    @include mobile{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
             }
 
             .btn-open{
@@ -88,7 +100,11 @@ body{
                 height: 48px;
                 transform-origin: center;
 
-             
+                @include mobile{
+                    margin-right: 50px;
+                    width: 38px;
+                    height: 38px;
+                }
 
                 &:hover{
                     transform-origin: center;
@@ -107,6 +123,11 @@ body{
                     background: #000;
                     transition: 0.8s;
 
+                    @include mobile{
+                        top: 15px;
+                        width: 18px;
+                    }
+
                     &.open{
                         top: 23px;
                         left: 10px;
@@ -124,6 +145,11 @@ body{
                     width: 28px;
                     background: #000;
                     transition: 0.8s;
+
+                    @include mobile{
+                        top: 23px;
+                        width: 18px;
+                    }
 
                     &.open{
                         top: 23px;

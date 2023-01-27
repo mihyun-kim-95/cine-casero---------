@@ -152,6 +152,10 @@ body {
     left: 30px;
   }
 }
+.header .header-inner .logo svg {
+  width: 45px;
+  height: 30px;
+}
 .header .header-inner .group-nav {
   position: relative;
   display: flex;
@@ -194,6 +198,12 @@ body {
 .header .header-inner .group-nav .btn-audio.off.active {
   display: block;
 }
+@media (max-width: 767px) {
+  .header .header-inner .group-nav .btn-audio svg {
+    width: 22px;
+    height: 22px;
+  }
+}
 .header .header-inner .group-nav .btn-open {
   position: relative;
   z-index: 10;
@@ -204,6 +214,13 @@ body {
   width: 48px;
   height: 48px;
   transform-origin: center;
+}
+@media (max-width: 767px) {
+  .header .header-inner .group-nav .btn-open {
+    margin-right: 50px;
+    width: 38px;
+    height: 38px;
+  }
 }
 .header .header-inner .group-nav .btn-open:hover {
   transform-origin: center;
@@ -221,6 +238,12 @@ body {
   background: #000;
   transition: 0.8s;
 }
+@media (max-width: 767px) {
+  .header .header-inner .group-nav .btn-open .path-top {
+    top: 15px;
+    width: 18px;
+  }
+}
 .header .header-inner .group-nav .btn-open .path-top.open {
   top: 23px;
   left: 10px;
@@ -237,6 +260,12 @@ body {
   width: 28px;
   background: #000;
   transition: 0.8s;
+}
+@media (max-width: 767px) {
+  .header .header-inner .group-nav .btn-open .path-bottom {
+    top: 23px;
+    width: 18px;
+  }
 }
 .header .header-inner .group-nav .btn-open .path-bottom.open {
   top: 23px;
@@ -614,7 +643,7 @@ body {
 }
 @media (max-width: 767px) {
   .loading .title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -658,8 +687,9 @@ body {
 }
 @media (max-width: 767px) {
   .sc-memory .text-area .title {
-    font-size: 30px;
-    line-height: 40px;
+    width: 90%;
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 .sc-memory .text-area .sub-title {
@@ -671,8 +701,9 @@ body {
 }
 @media (max-width: 767px) {
   .sc-memory .text-area .sub-title {
+    width: 80%;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 24px;
   }
 }
 .sc-memory .text-area .sub-title .bold {
@@ -758,7 +789,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-memory .gallery-area .center .gallery-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 .sc-memory .gallery-area .right.inner {
