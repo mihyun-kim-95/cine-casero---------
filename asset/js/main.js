@@ -419,6 +419,7 @@ $('[data-img]').each(function(i,el){
             start:"0% 90%",
             end:"100% 50%",
             scrub:1,
+            markers:true,
         },
         yPercent: -80,
         scale: 1.1,
@@ -457,21 +458,65 @@ $('[data-fade]').each(function(i,el){
 //focus 스크롤 이미지 줄이기 효과
 gsap.set('.sc-focus .title',{opacity:0})
 
-const tlFocus = gsap.timeline({
-    scrollTrigger:{
-        trigger:'.sc-focus',
-        start:"0% 0%",
-        end:"150%",
-        scrub: 3,
-        pin: '.sc-focus .video-area',
+ScrollTrigger.matchMedia({
+    // large
+    "(min-width: 1025px)": function() {
+        gsap.set('.sc-focus .title',{opacity:0})
+
+        const tlFocus = gsap.timeline({
+            scrollTrigger:{
+                trigger:'.sc-focus',
+                start:"0% 0%",
+                end:"150%",
+                scrub: 3,
+                pin: '.sc-focus .video-area',
+            },
+        })
+        
+        tlFocus
+        .to('.sc-focus video',{width: 330, height: 330, borderRadius: 500})
+        .to('.sc-focus .title', {opacity: 1})
+        .to('.sc-focus .inner', {yPercent: -100})
     },
-})
+    // medium
+    "(min-width: 768px) and (max-width: 1024px)": function() {
+        gsap.set('.sc-focus .title',{opacity:0})
 
-tlFocus
-.to('.sc-focus video',{width: 330, height: 330, borderRadius: 500})
-.to('.sc-focus .title', {opacity: 1})
-.to('.sc-focus .inner', {yPercent: -100})
+        const tlFocus = gsap.timeline({
+            scrollTrigger:{
+                trigger:'.sc-focus',
+                start:"0% 0%",
+                end:"150%",
+                scrub: 3,
+                pin: '.sc-focus .video-area',
+            },
+        })
+        
+        tlFocus
+        .to('.sc-focus video',{width: 250, height: 250, borderRadius: 500})
+        .to('.sc-focus .title', {opacity: 1})
+        .to('.sc-focus .inner', {yPercent: -100})
+    },
+    // small
+    "(max-width: 767px)": function() {
+        gsap.set('.sc-focus .title',{opacity:0})
 
+        const tlFocus = gsap.timeline({
+            scrollTrigger:{
+                trigger:'.sc-focus',
+                start:"0% 0%",
+                end:"150%",
+                scrub: 3,
+                pin: '.sc-focus .video-area',
+            },
+        })
+        
+        tlFocus
+        .to('.sc-focus video',{width: 150, height: 150, borderRadius: 500})
+        .to('.sc-focus .title', {opacity: 1})
+        .to('.sc-focus .inner', {yPercent: -60})
+    },
+  });
 
 
 

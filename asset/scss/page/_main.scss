@@ -180,6 +180,10 @@
         padding-bottom: 700px;
     }
 
+    @include mobile{
+        padding-bottom: 2000px;
+    }
+
     .inner{
         width: 1320px;
         margin: 0 auto;
@@ -224,12 +228,14 @@
 
             &:nth-child(1){
                 position: absolute;
-                top: 10px;
-                left: 5%;
+                top: 0;
+                left: 10%;
                 transform: rotate(-7deg);
 
                 @include mobile{
-                    margin-right: 750px;
+                    position: absolute;
+                    top: 0;
+                    left: 20%;
                     transform: rotate(-3deg);
                 }
             }
@@ -241,9 +247,10 @@
                 transform: rotate(5deg);
 
                 @include mobile{
-                    margin-top: 10px;
-                    margin-right: 400px;
-                    transform: rotate(4deg);
+                    position: absolute;
+                    top: 300px;
+                    left: 20%;
+                    transform: rotate(6deg);
                 }
             }
 
@@ -254,7 +261,9 @@
                 transform: rotate(-4deg);
 
                 @include mobile{
-                    margin-right: 180px;
+                    position: absolute;
+                    top: 600px;
+                    left: 20%;
                     transform: rotate(-4deg);
                 }
             }
@@ -266,7 +275,9 @@
                 transform: rotate(4deg);
 
                 @include mobile{
-                    margin-right: 650px;
+                    position: absolute;
+                    top: 900px;
+                    left: 20%;
                     transform: rotate(4deg);
                 }
             }
@@ -274,12 +285,13 @@
             &:nth-child(5){
                 position: absolute;
                 top: 43%;
-                left: 38%;
+                left: 15%;
                 transform: rotate(-5deg);
 
                 @include mobile{
-                   top: 10px;
-                    margin-right: 380px;
+                    position: absolute;
+                    top: 1200px;
+                    left: 20%;
                     transform: rotate(-5deg);
                 }
             }
@@ -287,13 +299,14 @@
             &:nth-child(6){
                 position: absolute;
                 top: 40%;
-                left: 70%;
+                left: 60%;
                 transform: rotate(7deg);
 
                 @include mobile{
-                    top: -15px;
-                     margin-right: 70px;
-                     transform: rotate(5deg);
+                    position: absolute;
+                    top: 1500px;
+                    left: 80%;
+                    transform: rotate(5deg);
                  }
             }
         
@@ -317,6 +330,10 @@
             img{
                 border-radius: 20px;
                 width: 23vw;
+
+                @include mobile{
+                    width: 60vw;
+                }
             }
         }
 
@@ -367,6 +384,11 @@
         padding: 20px;
     }
 
+    @include mobile{
+        padding: 5px;
+        height: auto;
+    }
+
     .inner{
         padding-top: 80px;
         max-width: 1283px;
@@ -388,6 +410,10 @@
             font-weight: 500;
             line-height: 0.9em;
             margin-bottom: 1rem;
+
+            @include mobile{
+                font-size: 16vw;
+            }
         }
 
         .char{
@@ -403,6 +429,11 @@
             @include tablet{
                 font-size: 14px;
             }
+
+            @include mobile{
+                line-height: 20px;
+            }
+
             .bold{
                 font-weight: 700;
             }
@@ -420,9 +451,21 @@
                 font-size: 14px;
             }
 
+            p{
+                @include mobile{
+                    line-height: 21px;
+                    width: 100%;
+                    font-size: 12px;
+                }
+            }
+
             svg{
                 margin-left: 0.75rem; 
-                transition: 0.3s
+                transition: 0.3s;
+
+                @include mobile{
+                    margin-left: -5px;
+                }
             }
 
             &:hover svg{
@@ -438,10 +481,26 @@
             font-size: 13px;
             font-family: 'font';
 
+            span{
+                @include mobile{
+                    width: 100px;
+                }
+            }
+
             img{
                 margin-left: 1rem;
                 width: 185px;
                 height: 42px;
+
+                @include mobile{
+                    margin-left: 0;
+                    width: 175px;
+                }
+            }
+
+            @include mobile{
+                display: flex;
+                gap: 5px;
             }
         }
     }
@@ -544,6 +603,10 @@
         color: #fff;
         text-align: center;
 
+        @include mobile{
+            width: 55%;
+        }
+
         .title{
             display: block;
             margin-bottom: 1.5rem;
@@ -556,8 +619,8 @@
             }
 
             @include mobile{
-                font-size: 18px;
-                line-height: 24px;
+                font-size: 16px;
+                line-height: 21px;
             }
         }
 
@@ -631,8 +694,8 @@
 
 
                     @include mobile{
-                        font-size: 75px;
-                        line-height: 75px;
+                        font-size: 16vw;
+                        line-height: 50px;
                         margin-bottom: 30px;
                     }
 
@@ -770,6 +833,7 @@
         width: 100%;
         height: 100%;
         background: #eae9e4;
+        overflow: hidden;
 
         .inner{
             position: relative;
@@ -802,8 +866,9 @@
                 }
 
                 @include mobile{
-                    font-size: 70px;
-                    line-height: 90px;
+                    padding-top: 200px;
+                    font-size: 40px;
+                    line-height: 60px;
                 }
             }
 
@@ -817,7 +882,7 @@
                 }
 
                 @include mobile{
-                    gap: 15px;
+                    gap: 10px;
                 }
 
                 .slide{
@@ -832,7 +897,7 @@
                         }
 
                         @include mobile{
-                            gap: 300px;
+                            gap: 200px;
                         }
                         .img1{
                         width: 330px;
@@ -845,8 +910,8 @@
                             }
 
                             @include mobile{
-                                width: 190px;
-                                height: 300px;
+                                width: 130px;
+                                height: 170px;
                             }
                         }
 
@@ -861,8 +926,8 @@
                             }
 
                             @include mobile{
-                                width: 222px;
-                                height: 173px;
+                                width: 150px;
+                                height: 150px;
                             }
                         }
 
@@ -877,8 +942,8 @@
                             }
 
                             @include mobile{
-                                width: 200px;
-                                height: 260px;
+                                width: 130px;
+                                height: 200px;
                             }
                         }
                     }
@@ -894,7 +959,8 @@
                         }
 
                         @include mobile{
-                            gap: 270px;
+                            margin-top: 550px;
+                            gap: 220px;
                         }
                         .img4{
                             width: 271px;
@@ -907,8 +973,8 @@
                             }
 
                             @include mobile{
-                                width: 211px;
-                                height: 237px;
+                                width: 111px;
+                                height: 137px;
                             }
                         }
 
@@ -923,8 +989,8 @@
                             }
 
                             @include mobile{
-                                width: 214px;
-                                height: 180px;
+                                width: 120px;
+                                height: 150px;
                             }
                         }
                     }
@@ -961,6 +1027,9 @@
             .text-area{
                 margin-bottom: 45px;
 
+                @include mobile
+                {margin-bottom: 25px;}
+
                 .aboutus_title{
                     font-size: 104px;
                     line-height: 1;
@@ -972,7 +1041,7 @@
                     }
 
                     @include mobile{
-                        font-size: 70px;
+                        font-size: 16vw;
                     }
                 }
 
@@ -990,7 +1059,8 @@
 
                     @include mobile{
                         width: 100%;
-                        font-size: 14px;
+                        font-size: 12px;
+                        line-height: 17px;
                     }
 
                     .bold{
@@ -998,7 +1068,7 @@
                         font-size: 17px;
 
                         @include mobile{
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                     }
                 }
@@ -1010,6 +1080,15 @@
                     font-weight: 300;
                     font-family: 'font';
                     margin-bottom: 20px;
+
+                    @include tablet{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+
+                    @include mobile{
+                        font-size: 14px;
+                    }
                 }
 
                 .team-list{
@@ -1043,7 +1122,7 @@
                         }
 
                         @include mobile{
-                            font-size: 16px;
+                            font-size: 14px;
                         }
 
                         &::after{
@@ -1065,9 +1144,9 @@
                             font-size: 16px;
                         }
 
-
                         @include mobile{
-                            font-size: 14px;
+                            font-size: 12px;
+                            line-height: 17px;
                         }
                     }
                 }
@@ -1079,6 +1158,10 @@
         position: relative;
         background: #eae9e4;
         padding-top: 200px;
+
+        @include mobile{
+            padding-top: 100px;
+        }
 
         .video-area{
             video{
@@ -1107,7 +1190,8 @@
             }
 
             @include mobile{
-                font-size: 80px;
+                font-size: 50px;
+                top: 150px;
             }
         }
 
@@ -1117,7 +1201,6 @@
             max-width: 1080px;
             height: 800px;
             margin: 0 auto;
-
 
             .text-area{
                 max-width: 260px;
@@ -1130,7 +1213,8 @@
                 }
 
                 @include mobile{
-                    font-size: 14px;
+                    font-size: 13px;
+                    line-height: 18px;
                 }
                 &.left{
                     position: absolute;
@@ -1140,8 +1224,9 @@
                     @include mobile{
                         position: absolute;
                         bottom: 300px;
+                        left: 30px;
+                        text-align: center;
                     }
-                   
                 }
 
                 &.right{
@@ -1152,7 +1237,9 @@
 
                     @include mobile{
                         position: absolute;
-                        bottom: -500px;
+                        bottom: -200px;
+                        left: 30px;
+                        text-align: center;
                     }
                 }
             }
@@ -1185,6 +1272,11 @@
 
             .title-area{
                 width: 50%;
+
+                @include mobile{
+                    width: 100%;
+                }
+
                 .service-title{
                     font-family: 'IvyMode';
                     font-size: 7vw;
@@ -1199,8 +1291,10 @@
                     }
 
                     @include mobile{
-                        font-size: 60px;
-                        margin-left: 25px;
+                        width: 100%;
+                        font-size: 14vw;
+                        margin-left: 5px;
+                        margin-bottom: 15px;
                     }
                 }
 
@@ -1217,8 +1311,9 @@
                     }
 
                     @include mobile{
+                        width: 90%;
                         font-size: 14px;
-                        margin-left: 25px;
+                        margin-left: 5px;
                     }
 
                 }
@@ -1228,8 +1323,8 @@
                 width: 50%;
 
                 @include mobile{
-                    margin-left: 15px;
                     padding: 10px;
+                    width: 100%;
                 }
 
                 .inner-wrap{
@@ -1237,6 +1332,13 @@
 
                     @include tablet{
                         margin: 20px 0 50px;
+                    }
+
+                    svg{
+                        @include mobile{
+                            width: 25px;
+                            height: 25px;
+                        }
                     }
 
                     .title{
@@ -1248,12 +1350,15 @@
                         @include tablet{
                             font-size: 16px;
                         }
+
+                        @include mobile{
+                            font-size: 14px;
+                        }
                     }
 
                     .desc{
                         font-size: 16px;
                         line-height: 26px;
-                        width: 80%;
 
                         @include tablet{
                             width: 75%;
@@ -1261,7 +1366,7 @@
                         }
 
                         @include mobile{
-                            width: 350px;
+                            width: 90%;
                         }
                     }
                 }
@@ -1316,7 +1421,7 @@
 
                 @include mobile{
                     font-size: 16px;
-                    line-height: 18px;
+                    line-height: 21px;
                 }
             }
 

@@ -101,7 +101,6 @@ body{
                 transform-origin: center;
 
                 @include mobile{
-                    margin-right: 50px;
                     width: 38px;
                     height: 38px;
                 }

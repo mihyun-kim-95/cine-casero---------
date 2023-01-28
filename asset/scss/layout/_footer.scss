@@ -101,10 +101,6 @@
                         line-height: 35px;
                         font-size: 14px;
 
-                        @include mobile{
-                            width: 100px;
-                        }
-
                         .title{
                             font-weight: 600;
                             font-size: 18px;
