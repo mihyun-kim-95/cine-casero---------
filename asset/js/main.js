@@ -419,7 +419,6 @@ $('[data-img]').each(function(i,el){
             start:"0% 90%",
             end:"100% 50%",
             scrub:1,
-            markers:true,
         },
         yPercent: -80,
         scale: 1.1,

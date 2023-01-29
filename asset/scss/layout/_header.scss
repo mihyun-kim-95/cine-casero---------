@@ -132,6 +132,10 @@ body{
                         left: 10px;
                         transform: rotate(45deg);
                         background: #fff;
+
+                        @include mobile{
+                            top: 18px;
+                        }
                     }
                 }
                 .path-bottom{
@@ -155,6 +159,10 @@ body{
                         left: 10px;
                         transform: rotate(-45deg);
                         background: #fff;
+
+                        @include mobile{
+                            top: 18px;
+                        }
                     }
                 }
             }
@@ -248,6 +256,10 @@ body{
                 align-items: center;
                 justify-content: center;
 
+                @include tablet{
+                    font-size: 18px;
+                }
+
                 @include mobile{
                    position: absolute;
                    left: 120px;
@@ -259,9 +271,15 @@ body{
                     grid-template-columns: repeat(2, 1fr);
                     gap: 50px;
 
+                    @include tablet{
+                        gap: 30px;
+                    }
+
                     @include mobile{
                         display: flex;
-                        font-size: 18px;
+                        font-size: 14px;
+                        gap: 10px;
+                        margin-right: 50px;
                     }
 
                     .sns-item{
@@ -278,13 +296,18 @@ body{
                 .menu-list{
                     display: flex;
                     flex-direction: column;
-                    gap: 50px;
+                    gap: 40px;
                     padding-top: 120px;
                     margin-left: 95px;
 
+                    @include tablet{
+                        margin-left: 20px;
+                    }
+
                     @include mobile{
                         position: absolute;
-                        right: 120px;
+                        left: 40%;
+                        transform: translateX(-40%);
                      }
 
                     .menu-item{
@@ -294,6 +317,14 @@ body{
                             font-family: 'IvyMode';
                             font-weight: 600;
                             vertical-align: top;
+
+                            @include tablet{
+                                font-size: 18px;
+                            }
+
+                            @include mobile{
+                                font-size: 15px;
+                            }
                         }
 
                         em{
@@ -302,8 +333,12 @@ body{
                             font-weight: 600;
                             margin-left: 20px;
 
+                            @include tablet{
+                                font-size: 32px;
+                            }
+
                               @include mobile{
-                                   font-size: 30px;
+                                   font-size: 21px;
                                 }
                         }
 
@@ -317,8 +352,16 @@ body{
                             flex-direction: column;
                             gap: 20px;
 
+                            @include tablet{
+                                margin-top: 10px;
+                                gap: 15px;
+                            }
+
                             @include mobile{
-                                font-size: 18px;
+                                width: 100%;
+                                font-size: 15px;
+                                margin-top: 15px;
+                                margin-left: 38px;
                              }
 
                             .sub-item{
