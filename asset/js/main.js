@@ -60,12 +60,12 @@ tl1
 
 
 //헤더 컬러 체인지
-$('[data-white]').each(function(i,el){
+$('[data-theme="white"]').each(function(i,el){
     gsap.from(el, ({
         scrollTrigger:{
             trigger:el,
             start:"0% 0%",
-            end:"100% 0",
+            end:"100% 0%",
             toggleClass: {targets: '.header-inner', className: "active"},
         },
     }))
